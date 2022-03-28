@@ -4,7 +4,7 @@
 
 ### Below is the overview of the data.
 
-|                                      | status                          |      |
+|                                      | status                          |status|
 |--------------------------------------|---------------------------------|------|
 | treatment                            | Alive during observation period | Dead |
 | Standard chemotherapy treatment only | 5                               | 64   |
