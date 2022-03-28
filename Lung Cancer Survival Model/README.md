@@ -4,8 +4,8 @@
 
 ### Below is the overview of the data.
 
- |**status**
+ |**status**|
 :-----:|:-----:
-treatment|Alive during observation period
-Standard chemotherapy treatment only|5
-Chemotherapy combined with test drug                               |4
+treatment|Alive during observation period| Dead
+Standard chemotherapy treatment only|5|64
+Chemotherapy combined with test drug                               |4|64
