@@ -1,5 +1,5 @@
 rm(list=ls()) 
-tchurn=import("TelcoChurn.xlsx")
+tchurn=import("TelcoChurn.csv")
 str(tchurn)
 
 tchurn$gender=as.factor(tchurn$gender)
