@@ -34,3 +34,6 @@ inter_logit  <- glm(Churn ~ gender + Dependents + tenure + OnlineSecurity + Onli
 
 - Both telephone and Internet customers churn rate model:
 both_logit  <- glm(Churn ~ gender + Dependents + MultipleLines + InternetService + tenure + OnlineSecurity + OnlineBackup + DeviceProtection + TechSupport + StreamingTV + StreamingMovies + Contract +  PaymentMethod_auto + MonthlyCharges, family=binomial (link="logit"), data=train_both)
+
+![image](https://user-images.githubusercontent.com/97752847/160472846-2acbd548-9b5b-4b89-bf78-c324ebf84c3c.jpeg)
+
