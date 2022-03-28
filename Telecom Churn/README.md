@@ -43,3 +43,47 @@ tele\_logit  |0.974359|0.9318801|0.9526462|0.5839537
 inter\_logit  |0.8538462|0.8604651|0.8571429|0.7019231
 both\_logit  |0.8525641|0.786052|0.8179582|0.7153263
 
+
+## What are the top three predictors of churn of 
+### (i)only telephone customers
+### Contract
+P(one year contact) = 0.048
+P(Two year contract)=0.036
+Customers contract period impacts the churn rate, the probability of a customer with 1 year contract to churn is 95% less than that of a customer with monthly contracts. Similarly, the probability of a customer with 2 year contract to churn is 96% less than that of a customer with monthly contracts.
+
+### Being a senior citizen 
+P=0.338
+A senior citizen customers probability to churn is 33.8% more than that of a customer who is not a senior citizen.
+Having multiple lines with the company
+P=0.11
+A customer with multiple lines has 89% less probability to churn than customer with single line.
+
+### (ii)only Internet service customers
+### Contract 
+P (one year contact) = 0.39
+P (two year contract) = 0.23
+Customers contract period impacts the churn rate, the probability of a customer with 1 year contract to churn is 60% less than that of a customer with monthly contracts. Similarly, the probability of a customer with 2 year contract to churn is 76% less than that of a customer with monthly contracts.
+
+### Online security
+P=0.095
+A customer with online security added in plan has 90% less probability to churn than customer without online security.
+
+### Tech support
+P=0.108
+A customer with tech support added in plan has 89% less probability to churn than customer without tech support.
+
+### (iii) customers who subscribe to both phone and Internet services. 
+### Contract 
+P (one year contact) = 0.107
+P (two year contract) = 0.029
+Customers contract period impacts the churn rate, the probability of a customer with 1 year contract to churn is 89% less than that of a customer with monthly contracts. Similarly, the probability of a customer with 2 year contract to churn is 97% less than that of a customer with monthly contracts.
+
+### Fiber optic
+P=0.75
+A customer with Fiber optic Internet connection has 75% more probability to churn than customer with DSL internet connection.
+
+### Having multiple lines with the company
+P=0.59
+A customer with multiple lines has 59% more probability to churn than customer with single line.
+
+
