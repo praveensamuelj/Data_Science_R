@@ -37,6 +37,26 @@ Below are the variables and their effect in the target variable
 -	Supermarket model 3, 1 ,2 and Grocery stores, in this decreasing order the sales vary.
 -	Seafood has the highest median sales and baking goods have the lowest median sales in the data
 
+### Models:
+## sales.model2= lm(log(Item_Sales) ~Item_Fat_Content+Item_Visibility+Item_Type+Item_MRP+Outlet_Year+Outlet_Type+City_Type+Outlet_ID)
+## sales.model3= lmer(log(Item_Sales) ~Item_Fat_Content+Item_Visibility+Item_Type+Item_MRP+Outlet_Year+Outlet_Type+City_Type+(1|Outlet_ID), data=sales_data, REML=FALSE)
+### sales.model4= lmer(log(Item_Sales) ~Item_Fat_Content+Item_Visibility+Item_Type+Item_MRP+Outlet_Year+Outlet_Type+(1|City_Type/Outlet_ID), data=sales_data, REML=FALSE)
+
+![image](https://user-images.githubusercontent.com/97752847/160480125-1297ac0c-1ffd-4208-9608-e99bda183e81.jpeg)
+
+- sales.model2 and sales.model3 are 2 level ,fixed and random effects models respectively and sales.model4 is another random effects models with 3 levels explaining all the factors required. I will be considering the random effects sales.model3 with better AIC to provide my interpretations.
+
+## Conclusion:
+- Supermarket Type 3 has the best sales compared all other types, with 250% more sales than Grocery store, 57.5% more sales than Supermarket Type 1 and 75.3% more than Supermarket Type2.
+- Tier 1 City has better sales than Tier2 and Tier3 cities by 1.6% and 3.3% respectively.
+- The top 3 performing stores are OUT35(+0.019%), OUT049 (+0.007%), OUT017 (+0.005%).
+The bottom 3 performing stores are OUT045 (-0.025%), OUT046 (-0.011%), OUT010 (-0.003%)
+### Some actionable recommendations:
+-	Opening a Supermarket Type 3 in a Tier 1 city would be the best decision given a huge increase in overall sales compared to others.
+-	Items under Bread, Canned and Meat categories can yield in better sales, so the supermarket can focus on those items.
+
+
+
 
 
 
