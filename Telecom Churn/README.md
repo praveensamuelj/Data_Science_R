@@ -8,9 +8,9 @@
 
 Below is the variable table which I have considered to calculate the churn rate of telephone only, Internet only and internet & telephone customers respectively. To analyze and model them separately, I choose to subset the data. First subset excluding the customers who do not have internet service from the initial data set, which will give me only telephone customers. Second subset excluding the customers who do not have telephone service from the initial data set, which will give me only Internet service customers. Finally, the third one will be customers who have telephone service and have one of the either (DSL/Fiber optics) internet service. I have engineered payment method as automatic or not and Churn variable to num 1 and 0. 
 
--The first dataset has 1526 data points of which 113 customers have churned. Converted the required categorical columns to factors.
--The Second dataset has 682 data points of which 170 customers have churned. Converted the required categorical columns to factors.
--This final dataset has 4835 data points of which 1586 customers have churned. Converted the required categorical columns to factors.
+- The first dataset has 1526 data points of which 113 customers have churned. Converted the required categorical columns to factors.
+- The Second dataset has 682 data points of which 170 customers have churned. Converted the required categorical columns to factors.
+- This final dataset has 4835 data points of which 1586 customers have churned. Converted the required categorical columns to factors.
 
 **Variable**|**Effect**|**Rationale**
 :-----:|:-----:|:-----:
