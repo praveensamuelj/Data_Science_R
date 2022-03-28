@@ -24,3 +24,13 @@ OnlineSecurity, OnlineBackup,DeviceProtection, TechSupport, StreamingTV, Streami
 Contract|-/+|Longer contracts yield to lesser churn rates as people usually don’t want to break contacts and move. 
 PaymentMethod\_auto|-/+|Automatic payment methods, this explains the customer want to have a long tenure with the company, thus low churn rate. 
 MonthlyCharges|+|More are the charges more is the chance of customer moving away to cheaper options.
+
+
+- Only Telephone customers churn rate model:
+tele_logit  <- glm(Churn ~ gender + SeniorCitizen + Dependents + tenure + MultipleLines + Contract +  PaymentMethod_auto + MonthlyCharges, family=binomial (link="logit"), data=train_tele)
+
+- Only Internet customers churn rate model:
+inter_logit  <- glm(Churn ~ gender + Dependents + tenure + OnlineSecurity + OnlineBackup + DeviceProtection + TechSupport + StreamingTV + StreamingMovies + Contract +  PaymentMethod_auto + MonthlyCharges, family=binomial (link="logit"), data=train_inter)
+
+- Both telephone and Internet customers churn rate model:
+both_logit  <- glm(Churn ~ gender + Dependents + MultipleLines + InternetService + tenure + OnlineSecurity + OnlineBackup + DeviceProtection + TechSupport + StreamingTV + StreamingMovies + Contract +  PaymentMethod_auto + MonthlyCharges, family=binomial (link="logit"), data=train_both)
