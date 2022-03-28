@@ -37,3 +37,9 @@ both_logit  <- glm(Churn ~ gender + Dependents + MultipleLines + InternetService
 
 ![image](https://user-images.githubusercontent.com/97752847/160472846-2acbd548-9b5b-4b89-bf78-c324ebf84c3c.jpeg)
 
+**Model**|**Recall**|**Precision**|**F1 - Score**|**AUC**
+:-----:|:-----:|:-----:|:-----:|:-----:
+tele\_logit  |0.974359|0.9318801|0.9526462|0.5839537
+inter\_logit  |0.8538462|0.8604651|0.8571429|0.7019231
+both\_logit  |0.8525641|0.786052|0.8179582|0.7153263
+
